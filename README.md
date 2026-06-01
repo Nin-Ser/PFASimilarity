@@ -2,7 +2,7 @@
 This open-source R script implements a similarity-based framework for matching detected PFAS with structurally similar reference standards.
 The approach combines molecular fingerprints (ECFP6 and MACCS keys) and fluorine content derived from SMILES representations to compute weighted Tanimoto similarity scores. For each detected PFAS, the most similar reference standard is identified and reported together with its similarity score.
 The workflow is automated and processes two user-provided input files (PFAS and standards lists in CSV format containing compound names and SMILES). It performs molecular parsing, fingerprint calculation, similarity scoring, and outputs a matching table.
-Invalid or missing SMILES entries are automatically flagged and excluded from the similarity calculation to ensure robust and reproducible results.
+Invalid or missing SMILES entries are automatically flagged and excluded from the similarity calculation.
 This framework was developed to support the selection of reference standards in PFAS semi-quantification workflows. By providing a reproducible measure of structural similarity between detected compounds and available standards, it helps standardize analogue selection and reduce expert-driven subjectivity.
 # Input requirements
 -	pfas.csv: detected compounds (Name, SMILES) 
